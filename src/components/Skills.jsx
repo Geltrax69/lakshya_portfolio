@@ -35,7 +35,7 @@ const Skills = () => {
   }
 
   return (
-    <section className="min-h-fit bg-bg_light_primary" id="skills">
+    <section className="min-h-screen bg-bg_light_primary snap-start" id="skills">
       {/* modal */}
       <Modal
         isOpen={modalIsOpen}
@@ -48,16 +48,9 @@ const Skills = () => {
         </div>
         <br />
         <ul className="list-decimal px-4 font-Poppins sm:text-sm text-xs !leading-7">
-          <li>Lorem ipsum dolor sit, amet consectetur adipisicing.</li>
-          <li>Lorem ipsum dolor sit, ame.</li>
-          <li>Lorem ipsum dolor sit, amet consectetur</li>
-          <li>
-            Lorem ipsum dolor sit, amet dolor sit, amet consectetur adipisicing.
-          </li>
-          <li>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad est
-            beatae quos rem.
-          </li>
+          {Array.isArray(selectSkill?.para)
+            ? selectSkill.para.map((item, index) => <li key={index}>{item}</li>)
+            : <li>{selectSkill?.para}</li>}
         </ul>
         <br />
         <div className="flex justify-end">
@@ -69,10 +62,10 @@ const Skills = () => {
 
       {/* content */}
       <div className="md:container px-5  py-14">
-        <h2 className="title" data-aos="fade-down">
+        <h2 className="title">
           {skills.title}
         </h2>
-        <h4 className="subtitle" data-aos="fade-down">
+        <h4 className="subtitle">
           {skills.subtitle}
         </h4>
         <br />
@@ -80,8 +73,6 @@ const Skills = () => {
           {skills.skills_content.map((skill, i) => (
             <div
               key={i}
-              data-aos="fade-up"
-              data-aos-delay={i * 400}
               className="bg-white sm:cursor-pointer 
                relative group w-full flex items-center
                 gap-5 p-5 max-w-sm rounded-md border-2 border-slate-200"
@@ -95,7 +86,7 @@ const Skills = () => {
               </div>
               <div>
                 <h6>{skill.name}</h6>
-                <p className="italic">{skill.para}</p>
+
                 <div
                   onClick={() => {
                     setSelectSkill(skill);

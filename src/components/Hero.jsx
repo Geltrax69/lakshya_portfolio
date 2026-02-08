@@ -5,7 +5,7 @@ const Hero = () => {
   const { hero } = content;
 
   return (
-    <section id="home" className="overflow-hidden">
+    <section id="home" className="overflow-hidden snap-start">
       <div className="min-h-screen relative flex md:flex-row flex-col-reverse md:items-end justify-center items-center">
         <div
           data-aos="slide-left"
@@ -19,7 +19,7 @@ const Hero = () => {
         </div>
 
         {/* first col */}
-        <div className="pb-16 px-6 pt-5" data-aos="fade-down">
+        <div className="pb-16 px-6 pt-5">
           <h2>{hero.title}</h2>
           <br />
           <div className="flex justify-end">
@@ -29,8 +29,6 @@ const Hero = () => {
             {hero.hero_content.map((content, i) => (
               <div
                 key={i}
-                data-aos="fade-down"
-                data-aos-delay={i * 300}
                 className={`flex items-center w-80 gap-5
             ${i === 1 && " flex-row-reverse text-right"}  `}
               >

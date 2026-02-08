@@ -2,19 +2,21 @@
 import Hero_person from "./assets/images/Hero/person.png";
 
 import figma from "./assets/images/Skills/figma.png";
-import sketch from "./assets/images/Skills/sketch.png";
-import ps from "./assets/images/Skills/ps.png";
-import reactjs from "./assets/images/Skills/react.png";
-import nodejs from "./assets/images/Skills/node.png";
+import canva from "./assets/images/Skills/canva.svg";
+import html from "./assets/images/Skills/html.svg";
 import python from "./assets/images/Skills/python.png";
 
 import services_logo1 from "./assets/images/Services/logo1.png";
 import services_logo2 from "./assets/images/Services/logo2.png";
 import services_logo3 from "./assets/images/Services/logo3.png";
 
-import project1 from "./assets/images/projects/img1.png";
-import project2 from "./assets/images/projects/img2.png";
-import project3 from "./assets/images/projects/img3.png";
+import p1 from "./assets/images/projects/1.png";
+import p2 from "./assets/images/projects/2.png";
+import p3 from "./assets/images/projects/3.png";
+import p4 from "./assets/images/projects/4.png";
+import p5 from "./assets/images/projects/5.png";
+import p6 from "./assets/images/projects/6.png";
+import p7 from "./assets/images/projects/7.png";
 import person_project from "./assets/images/projects/person.png";
 
 import avatar1 from "./assets/images/Testimonials/avatar1.png";
@@ -45,32 +47,19 @@ export const content = {
       icon: BiUser,
     },
     {
-      link: "#services",
-      icon: RiServiceLine,
-    },
-    {
       link: "#projects",
       icon: RiProjectorLine,
     },
-    {
-      link: "#contact",
-      icon: MdOutlinePermContactCalendar,
-    },
   ],
   hero: {
-    title: "Web Developer",
-    firstName: "JOHN",
-    LastName: "ALEX",
-    btnText: "Hire Me",
+    firstName: "LAKSHYA",
+    LastName: "SIDHU",
+    btnText: "21 years old",
     image: Hero_person,
     hero_content: [
       {
-        count: "8+",
-        text: "Years of Experinse in Web development",
-      },
-      {
-        count: "20+",
-        text: "Projects Worked in my career",
+        count: "",
+        text: "Currently studying Lovely Professional University.",
       },
     ],
   },
@@ -80,32 +69,32 @@ export const content = {
     skills_content: [
       {
         name: "Figma",
-        para: "Lorem ipsum text  dummy",
+        para: [
+          "Login pages design",
+          "workflow of website design",
+          "Clone the netflix workflow design",
+        ],
         logo: figma,
       },
       {
-        name: "Node js",
-        para: "Lorem ipsum text  dummy",
-        logo: nodejs,
+        name: "Canva",
+        para: ["Cards Design", "App Design", "Website Design"],
+        logo: canva,
       },
       {
-        name: "Adobe Photoshop",
-        para: "Lorem ipsum text  dummy",
-        logo: ps,
+        name: "Html Css",
+        para: ["Login Page ,", "Clone of Netflix", "Gym Website", ""],
+        logo: html,
       },
       {
-        name: "React js",
-        para: "Lorem ipsum text  dummy",
-        logo: reactjs,
-      },
-      {
-        name: "Sketch",
-        para: "Lorem ipsum text  dummy",
-        logo: sketch,
-      },
-      {
-        name: "Python",
-        para: "Lorem ipsum text  dummy",
+        name: "Python and Cpp",
+        para: [
+          "Pattern printing (stars, numbers)",
+          "Calculator using switch case",
+          "Student marks & grade calculator",
+          "Temperature converter",
+          "Prime Checker",
+        ],
         logo: python,
       },
     ],
@@ -136,18 +125,35 @@ export const content = {
     title: "Projects",
     subtitle: "MY CREATION",
     image: person_project,
+    bg_image: p1,
     project_content: [
       {
-        title: "Gym Website",
-        image: project1,
+        title: "Youtube Thumbnail",
+        image: p1,
       },
       {
-        title: "Social Media web",
-        image: project2,
+        title: "Event Thumbnail",
+        image: p2,
       },
       {
-        title: "Creative Website",
-        image: project3,
+        title: "Youtube Thumbnail",
+        image: p3,
+      },
+      {
+        title: "Youtube Thumbnail",
+        image: p4,
+      },
+      {
+        title: "Social Media Post",
+        image: p5,
+      },
+      {
+        title: "Event Post",
+        image: p6,
+      },
+      {
+        title: "Id Card Store Website Design",
+        image: p7,
       },
     ],
   },
