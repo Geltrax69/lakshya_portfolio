@@ -10,14 +10,14 @@ import services_logo1 from "./assets/images/Services/logo1.png";
 import services_logo2 from "./assets/images/Services/logo2.png";
 import services_logo3 from "./assets/images/Services/logo3.png";
 
-import p1 from "./assets/images/projects/1.png";
-import p2 from "./assets/images/projects/2.png";
-import p3 from "./assets/images/projects/3.png";
-import p4 from "./assets/images/projects/4.png";
-import p5 from "./assets/images/projects/5.png";
-import p6 from "./assets/images/projects/6.png";
-import p7 from "./assets/images/projects/7.png";
-import person_project from "./assets/images/projects/person.png";
+import p1 from "./assets/images/Projects/1.png";
+import p2 from "./assets/images/Projects/2.png";
+import p3 from "./assets/images/Projects/3.png";
+import p4 from "./assets/images/Projects/4.png";
+import p5 from "./assets/images/Projects/5.png";
+import p6 from "./assets/images/Projects/6.png";
+import p7 from "./assets/images/Projects/7.png";
+import person_project from "./assets/images/Projects/person.png";
 
 import avatar1 from "./assets/images/Testimonials/avatar1.png";
 import avatar2 from "./assets/images/Testimonials/avatar2.png";
